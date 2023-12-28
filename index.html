@@ -11,38 +11,44 @@
     <div class="weather-card">
 
         <div class="weather-items">
-            <input class="search-input js-search-input" type="search" placeholder="Enter City Name" spellcheck="false">
-            <button class="search-btn" class="js-search-image">
+            <input class="search-input js-search-input" type="search" placeholder="Enter Country/City Name" spellcheck="false" onkeydown="keyHandle(event)">
+            <button class="search-btn js-search-btn">
                 <img src="weather image/search.png" class="search-image"> 
             </button>           
         </div>
-        <div class="image-div">
-            <img src="weather image/clear.png">
+        <div class="error">
+            <p>Invalid city name</p>
         </div>
-
-        <div class="center-text">
-            <h1 class="text js-temp" >20 °C</h1>
-            <h3 class="text2 js-country-text">Bangladesh</h3>
-        </div>
-        
-        <div class="information-hold">
-            <div class="details">
-                <img src="weather image/humidity.png" class="wind-humidity-image">
-                <div class="humidity">
-                    <p>50%</p>
-                    <p>Humidity</p>
-                </div>
+        <div class="weather-info">
+            <div class="image-div">
+                <img src="weather image/clear.png" class="css-image js-image">
             </div>
-
-            <div class="details">
-                <img src="weather image/wind.png" class="wind-humidity-image">
-                <div class="wind">
-                    <p>15 km/h</p>
-                    <P>Wind Speed</P>
-                </div>
+    
+            <div class="center-text">
+                <h1 class="text js-temp" >20 °C</h1>
+                <h3 class="text2 js-country">Bangladesh</h3>
             </div>
             
+            <div class="information-hold">
+                <div class="details">
+                    <img src="weather image/humidity.png" class="wind-humidity-image">
+                    <div class="humidity">
+                        <p class="js-humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+    
+                <div class="details">
+                    <img src="weather image/wind.png" class="wind-humidity-image">
+                    <div class="wind">
+                        <p class="js-wind">15 km/h</p>
+                        <P>Wind Speed</P>
+                    </div>
+                </div>
+                
+            </div>
         </div>
+        
     </div>
 
     <script src="weather.js"></script>
